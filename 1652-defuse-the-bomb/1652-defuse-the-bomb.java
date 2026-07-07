@@ -14,7 +14,7 @@ class Solution {
             windowSum+=code[i];
         }
         for(int i=0;i<n;i++){
-            result[i]=windowSum;
+            result[i]=windowSum; //stores the value of index 0 first which will be the sum of next 3 when k is 3//
             windowSum-=code[start%n];
             windowSum+=code[(end+1)%n];
             start++; end++;
